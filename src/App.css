@@ -1,0 +1,308 @@
+.appBar {
+  box-shadow:none ;
+}
+.logo {
+      height: '50px';
+      margin-right:10px;
+      
+    }
+
+  .grow {
+    flex-grow: 1;
+
+  }
+
+  .menuButton {
+   margin:10px;
+   /* flex-grow: 1; */
+   display:flex;
+   flex-direction: column;   
+   }
+
+   .menutext{
+    font-size: small;
+   }
+
+   .button{
+    margin-left: 10px;
+   }
+
+   .menuItem {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+   }
+
+   .menuItem :hover{
+    background-color: transparent;
+   }
+
+   .search {
+    position: relative;
+    flex-grow: 1;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    margin-right: 10px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    width:0;
+   }
+
+
+   .searchIcon {
+   cursor: pointer;
+   padding: 5px;
+   }
+
+   .whishicon{
+    color: lightblue;
+    cursor: pointer;
+   }
+
+   .whishicon :hover{
+    color: red;
+    background-color: red;
+   }
+   .nav-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: rgb(120, 113, 113);
+  }
+
+  .active{
+    color: grey;
+    
+  }
+  
+  .icon-link{
+    color: white;
+    text-decoration: none;
+  }
+
+  .carousal-container{
+    margin-top: 7%;
+    width: 100%;
+    display: flex;
+    color: white;
+  }
+
+  @media (min-width: 350px) and (max-width: 900px) {
+    .carousal-container {
+      margin-top: 20%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: white;
+     
+     }
+   }
+
+  .carousal-container2{
+    width: 70%;  
+    margin-left: 2%;
+  }
+
+  @media (min-width: 350px) and (max-width: 900px) {
+    .carousal-container2 {
+      width: 100%;
+     }
+   }
+
+
+  .list-images{
+    /* margin-right: 200px; */
+    /* background-color: #F2F2F2; */
+    /* padding: 100px; */
+    margin-left: 2%;
+  }
+
+  @media (min-width: 0px) and (max-width: 349px) {
+    .list-images {
+     display: none;
+     }
+     .carousel .slide {
+      height:30vh;
+       }
+   }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+   }
+
+   .carousel .slide {
+    height: 80vh;
+    width: 70%;
+   }
+
+   @media (min-width: 350px) and (max-width: 1000px) {
+    .carousel .slide {
+    height:30vh;
+     }
+   }
+
+   @media (min-width: 350px) and (max-width: 900px) {
+   .list-images {
+    display: none;
+    }
+  }
+
+   .carousel .slide img{
+    max-height: 100%;
+    width: 100%;
+   }
+
+   .sideimages{
+    margin-top: 1%;
+    display: flex;
+   }
+
+   .legend{
+    background-color: transparent !important;
+   }
+   
+
+   .legend :hover{
+    background-color: transparent !important;
+   }
+
+   .playbtnm{
+    margin-left: 120%;
+   }
+
+   .sideimages :hover{
+    color: yellow;
+    cursor: pointer;
+   }
+   
+   .watchlist_container{
+    margin-top: 5%;
+   }
+   
+   @media (max-width: 400px){
+    .watchlist_container{
+      margin-top: 20%;
+     }
+   }
+
+   @media (min-width: 401px) and (max-width:800px){
+    .watchlist_container{
+      margin-top: 10%;
+     }
+   }
+
+   .mt{
+    margin-top: 10%;
+   }
+
+   @media (min-width: 20px) and (max-width: 900px) {
+    .mt{
+      margin-top: 40%;
+     }
+   }
+
+   .active{
+    background-color: black;
+    color: grey;
+   }
+
+   .login{
+      text-decoration: none;
+      color: white;
+   }
+
+   .textdecoration{
+    text-decoration: none;
+   }
+
+   .heading{
+    color: yellow;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 10px;
+   }
+
+   .flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .images {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  ::-webkit-scrollbar{
+    height: 1px;              
+    width: 1px;              
+    /* border: 1px solid #d5d5d5; */
+}
+
+.date{
+  color: grey;
+}
+
+.iconhover{
+  color: yellow;
+}
+
+.iconhover :hover{
+  color: red;
+}
+
+.list_link{
+  color: white;
+  text-decoration: none;
+}
+
+.watchList_flex{
+  display:'flex';
+  flex-direction:'row'
+}
+
+@media (max-width: 600px) {
+  .watchlist-item {
+    flex-direction: column;
+  }
+
+  .watchlist-item img {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.watchBox{
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  flex-direction: 'row';
+}
+
+@media (min-width: 20px) and (max-width: 820px) {
+.watchBox{
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  flex-direction: 'column';
+
+}
+
+}
+
+.watchllist{
+  margin-top: 10%;
+}
+
+@media(max-width: 530px){
+  .watchllist{
+    margin-top: 20%;
+  }
+}
